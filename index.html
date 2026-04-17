@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thinking Chimp</title>
+  <meta name="description" content="Thinking Chimp — independent software from Kuala Lumpur.">
+  <link rel="icon" type="image/png" href="thinking-chimp-square.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo-link active" href="index.html">
+      <img src="thinking-chimp-square.png" alt="Thinking Chimp logo">
+      Thinking Chimp
+    </a>
+    <ul>
+      <li><a href="trickl.html">Trickl</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <img class="hero-logo" src="thinking-chimp-square.png" alt="Thinking Chimp">
+      <h1>Still thinking&hellip;</h1>
+      <p class="tagline">Independent software crafted with care. Good things take time — and a curious mind.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="trickl.html">See Trickl</a>
+        <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="yr"></span> Thinking Chimp PLT. All rights reserved.
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

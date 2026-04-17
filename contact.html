@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Thinking Chimp</title>
+  <meta name="description" content="Get in touch with Thinking Chimp.">
+  <link rel="icon" type="image/png" href="thinking-chimp-square.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo-link" href="index.html">
+      <img src="thinking-chimp-square.png" alt="Thinking Chimp logo">
+      Thinking Chimp
+    </a>
+    <ul>
+      <li><a href="trickl.html">Trickl</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <h1>Get in touch</h1>
+      <p>We'd love to hear from you.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-section">
+        <h2>Address</h2>
+        <address>
+          Thinking Chimp PLT<br>
+          BO1-A-9, Menara 2<br>
+          KL Eco City, 3, Jln Bangsar<br>
+          59200 Kuala Lumpur<br>
+          Malaysia
+        </address>
+      </div>
+      <div class="card-section">
+        <h2>Email</h2>
+        <span class="email-protected" id="em" aria-label="Email address"></span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="yr"></span> Thinking Chimp PLT. All rights reserved.
+  </footer>
+
+  <script>
+    // Email assembled at runtime — not present in HTML source
+    (function() {
+      var p = ['hell', 'o'];
+      var d = ['thinking', 'chimp', '.com'];
+      var u = p.join('');
+      var h = d.join('');
+      var el = document.getElementById('em');
+      var a = document.createElement('a');
+      a.href = 'mail\u0074o:' + u + '\u0040' + h;
+      a.textContent = u + '\u0040' + h;
+      el.appendChild(a);
+    })();
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
