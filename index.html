@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thinking Chimp</title>
-  <meta name="description" content="Thinking Chimp — independent software from Kuala Lumpur.">
+  <meta name="description" content="Thinking Chimp is an independent software studio in Kuala Lumpur building research-grounded tools for behaviour design.">
   <link rel="icon" type="image/png" href="thinking-chimp-square.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,24 +16,39 @@
     </a>
     <ul>
       <li><a href="trickl.html">Trickl</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main class="expanded">
     <div class="hero">
       <img class="hero-logo" src="thinking-chimp-square.png" alt="Thinking Chimp">
-      <h1>Still thinking&hellip;</h1>
-      <p class="tagline">Independent software crafted with care. Good things take time — and a curious mind.</p>
+      <h1>Boutique software, built thoughtfully.</h1>
+      <p class="tagline">Thinking Chimp is an independent software studio in Kuala Lumpur. Each product is the result of patient research, careful design, and unhurried execution.</p>
       <div class="cta-group">
         <a class="btn btn-primary" href="trickl.html">See Trickl</a>
-        <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+        <a class="btn btn-secondary" href="about.html">About us</a>
       </div>
     </div>
+
+    <section class="products-section">
+      <p class="section-label">What we&rsquo;re building</p>
+      <div class="product-card">
+        <img src="trickl-logo.jpg" alt="Trickl app icon">
+        <div class="product-card-body">
+          <h3>Trickl</h3>
+          <p>A habit design app grounded in BJ Fogg&rsquo;s Tiny Habits research. Design new habits with intention, diagnose why existing ones aren&rsquo;t sticking, and practise until they become part of who you are.</p>
+          <span class="badge">iOS &middot; watchOS &middot; Coming soon</span>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     &copy; <span id="yr"></span> Thinking Chimp PLT. All rights reserved.
+    &nbsp;&middot;&nbsp;
+    <a href="privacy.html">Privacy</a>
   </footer>
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>

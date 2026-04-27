@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trickl — Thinking Chimp</title>
-  <meta name="description" content="Trickl — coming soon from Thinking Chimp.">
+  <meta name="description" content="Trickl is a habit design app grounded in BJ Fogg's Tiny Habits research. Design, debug, and practise habits that last — coming to iPhone and Apple Watch.">
   <link rel="icon" type="image/png" href="thinking-chimp-square.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,23 +16,54 @@
     </a>
     <ul>
       <li><a class="active" href="trickl.html">Trickl</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main class="expanded">
     <div class="hero">
+      <div class="trickl-badge">Coming soon</div>
       <img class="hero-logo" src="trickl-logo.jpg" alt="Trickl">
-      <h1>Still pondering&hellip;</h1>
-      <p class="tagline">Trickl is being carefully thought through. Something worth doing is worth doing right.</p>
+      <h1>Design and debug the habits that shape your life.</h1>
+      <p class="tagline">Trickl is a habit design tool grounded in BJ Fogg&rsquo;s Tiny Habits research. Not a streak tracker &mdash; a thinking partner for building behaviours that actually last.</p>
       <div class="cta-group">
-        <a class="btn btn-secondary" href="contact.html">Stay in the loop</a>
+        <a class="btn btn-primary" href="contact.html">Stay in the loop</a>
       </div>
     </div>
+
+    <section class="pillars-section">
+      <p class="section-label">How it works</p>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Design</h3>
+          <p>Habits built on willpower alone fail. Trickl guides you to match your habit to your motivation level, minimise the effort required, and anchor it to a reliable prompt already in your day.</p>
+        </div>
+        <div class="pillar">
+          <h3>Debug</h3>
+          <p>Not sticking? Trickl helps you diagnose whether the problem is motivation, ability, or a missing prompt &mdash; and walks you toward a version that fits your life as it actually is.</p>
+        </div>
+        <div class="pillar">
+          <h3>Practice</h3>
+          <p>Small wins build identity. Trickl reinforces new behaviours through deliberate practice and celebration, wiring habits into who you are &mdash; not just what you intend to do.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform-section">
+      <p class="section-label">Platforms</p>
+      <p>Trickl is being built for <strong>iPhone</strong> and <strong>Apple Watch</strong> first, with iPad, Mac, and web to follow.</p>
+    </section>
+
+    <section class="about-strip">
+      <p>Trickl is based on the work of BJ Fogg, a behaviour scientist at Stanford University and author of <em>Tiny Habits: The Small Changes That Change Everything</em>. His Fogg Behaviour Model &mdash; B = MAP (Motivation, Ability, Prompt) &mdash; forms the foundation of how Trickl helps you think about and design lasting change.</p>
+    </section>
   </main>
 
   <footer>
     &copy; <span id="yr"></span> Thinking Chimp PLT. All rights reserved.
+    &nbsp;&middot;&nbsp;
+    <a href="privacy.html">Privacy</a>
   </footer>
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
